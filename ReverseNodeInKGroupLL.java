@@ -50,16 +50,15 @@ For the given input, the block sizes are 2 and 3 . First, we reverse 2 elements 
 
 import java.util.*;
 import java.io.*;
-// public class Node{
-//         public:
-// 	        int data;
-// 	        Node *next;
-// 	        Node(int data)
-// 	        {
-// 		        this->data = data;
-// 		        this->next = NULL;
-// 	        }
-// };
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
 
 public class ReverseNodeInKGroupLL{
     public static Node getListAfterReverseOperation(Node head, int n, int b[]) {
