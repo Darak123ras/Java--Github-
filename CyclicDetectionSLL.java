@@ -41,7 +41,6 @@ the tail connects to, and 'data' is the Integer data of the singly linked list.
 Time Limit: 1 sec
  */
 
-import java.util.*;
 class Node {
     int data;
     Node next;

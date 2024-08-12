@@ -48,8 +48,6 @@ For the given input, the block sizes are 2 and 3 . First, we reverse 2 elements 
  */
 // Amazon, Adobe, Microsoft, SAP Lab
 
-import java.util.*;
-import java.io.*;
 class Node {
     int data;
     Node next;
@@ -78,7 +76,7 @@ public class ReverseNodeInKGroupLL{
             if (blockSize > 0) {
                 Node blockHead = current;
                 Node prev = null;
-                Node tail = current;
+                // Node tail = current;
 
                 int count = 0;
                 while (current != null && count < blockSize) {
