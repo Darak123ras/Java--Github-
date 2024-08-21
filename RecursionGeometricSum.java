@@ -34,5 +34,6 @@ public class RecursionGeometricSum {
 		double ans = RecursionGeometricSum.findGeometricSum(k);
 		DecimalFormat dec = new DecimalFormat("#0.00000");
 		System.out.println(dec.format(ans));
+        s.close();
 	}
 }

@@ -29,5 +29,6 @@ public class RecursionSumOfDigits {
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
 		System.out.println(RecursionSumOfDigits.sumOfDigits(n));
+        s.close();
 	}
 }
