@@ -34,7 +34,7 @@ Time Limit: 1 sec.
 /****************************************************************
 
  Following is the class structure of the Node class:
-
+*************************************************************/
  class Node {
     public int data;
     public Node next;
@@ -57,7 +57,7 @@ Time Limit: 1 sec.
         this.next = next;
     }
 }
-    *************************************************************/
+    
 
 public class SearchLL {
     public static int searchInLinkedList(Node head, int k)
