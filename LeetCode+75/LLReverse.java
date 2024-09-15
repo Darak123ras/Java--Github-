@@ -31,6 +31,13 @@ Follow up: A linked list can be reversed either iteratively or recursively. Coul
 
  import java.util.*;
 
+  class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
  // Using Stack
 public class LLReverse {
     public ListNode reverseList(ListNode head) {
