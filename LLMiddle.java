@@ -32,7 +32,7 @@ Time Limit: 1 sec
 /****************************************************************
 
  Following is the class structure of the Node class:
-
+*****************************************************/
  class Node {
      public int data;
      public Node next;
@@ -54,7 +54,6 @@ Time Limit: 1 sec
      }
  }
 
- *****************************************************************/
 public class LLMiddle {
     public static Node findMiddle(Node head)
     {
