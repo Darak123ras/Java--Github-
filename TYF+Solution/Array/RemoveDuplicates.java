@@ -46,5 +46,30 @@ Time limit: 1 sec */
 
 
 public class RemoveDuplicates {
-    
+    public int removeDuplicates(int[] nums) {
+        int n=nums.length;
+        if(n==1) return 1;
+        Stack<Integer> stack=new Stack<>();
+        int i=0;
+        int j=i+1;
+        stack.push(nums[i]);
+        while(i<n && j<n){
+            if(nums[i]!=nums[j]){
+                stack.push(nums[j]);
+            }
+            i++;
+            j++;
+        }
+        int count=stack.size();
+        ArrayList<Integer> b=new ArrayList<>();
+        while(!stack.isEmpty()){
+            b.add(stack.pop());
+        }
+        Collections.reverse(b);
+        for(int m=0;m<count;m++){
+            nums[m]=b.get(m);
+        }
+        // if(n<2) return 0;
+        return count;
+    }
 }
