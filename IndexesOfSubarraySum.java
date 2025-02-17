@@ -20,6 +20,28 @@ Constraints:
 // Amazon, Google, Visa, Facebook
 
 public class IndexesOfSubarraySum {
+
+    // static ArrayList<Integer> subarraySum(int[] arr, int target) {
+    //     // code here
+    //     ArrayList<Integer>  list=new ArrayList<>();
+    //     list.add(-1);
+    //     int n=arr.length;
+    //     if(n<2) return list;
+    //     for(int i=0;i<n;i++){
+    //         int sum=0;
+    //         for(int j=i;j<n;j++){
+    //             sum+=arr[j];
+    //             if(sum==target){
+    //                 list.remove(0);
+    //                 list.add(i+1);
+    //                 list.add(j+1);
+    //                 return list;
+    //             }
+    //         }
+    //     }
+    //     return list;
+    // }
+
     static ArrayList<Integer> subarraySum(int[] arr, int target) {
         // code here
         ArrayList<Integer> list=new ArrayList<>();
